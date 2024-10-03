@@ -41,13 +41,33 @@ with DAG(
                     break
 
         df.to_csv("./data/bronze/api_raw_data.csv",index=False)
-    
+
+    def silver_dag(**kwargs):
+        df = pd.read_csv("./data/bronze/api_raw_data.csv")
+        print(df.head())
+
+        print(len(df['country'].unique()),df['country'].unique())
+        df['country'] = df['country'].apply(lambda x: x.strip())
+        print(len(df['country'].unique()),df['country'].unique(),end='\n\n')
+
+        print(len(df['state'].unique()),df['state'].unique(),end='\n\n')
+        df['state'] = df['state'].apply(lambda x: x.strip())
+        df['state'] = df['state'].apply(lambda x: x.title())
+        print(len(df['state'].unique()),df['state'].unique())
+
+        df.to_parquet("./data/silver",partition_cols=["country","state"])
+        pass
+
     bronze_dag_task = PythonOperator(
         task_id="bronze_dag",
         python_callable=bronze_dag,
+    )
+    silver_dag_task = PythonOperator(
+        task_id="silver_dag",
+        python_callable=silver_dag,
     )
 
     start_task = DummyOperator(task_id='start_task', dag=dag)
 
     end_task = DummyOperator(task_id='end_task', dag=dag)
-    start_task >> bronze_dag_task >> end_task
+    start_task >> bronze_dag_task >> silver_dag_task >> end_task
