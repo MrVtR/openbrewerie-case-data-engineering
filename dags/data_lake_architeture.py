@@ -58,6 +58,11 @@ with DAG(
         df.to_parquet("./data/silver",partition_cols=["country","state"])
         pass
 
+    def gold_dag(**kwargs):
+        df = pd.read_parquet("./data/silver")
+        df2 = df.groupby(["state","brewery_type"]).brewery_type.agg(brewery_count=("count"))
+        df2.to_csv("./data/gold/aggregate.csv")
+
     bronze_dag_task = PythonOperator(
         task_id="bronze_dag",
         python_callable=bronze_dag,
@@ -66,8 +71,12 @@ with DAG(
         task_id="silver_dag",
         python_callable=silver_dag,
     )
+    gold_dag_task = PythonOperator(
+        task_id="gold_dag",
+        python_callable=gold_dag,
+    )
 
     start_task = DummyOperator(task_id='start_task', dag=dag)
 
     end_task = DummyOperator(task_id='end_task', dag=dag)
-    start_task >> bronze_dag_task >> silver_dag_task >> end_task
+    start_task >> bronze_dag_task >> silver_dag_task >> gold_dag_task >> end_task
