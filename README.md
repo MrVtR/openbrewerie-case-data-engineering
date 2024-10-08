@@ -1,5 +1,7 @@
 # OpenBrewerie Case Data Engineering
 
+[ENGLISH README](https://github.com/MrVtR/openbrewerie-case-data-engineering/blob/main/README_ENG.md)
+
 ## Conceito do projeto
 Este projeto implementa uma pipeline de dados utilizando Apache Airflow para coletar, processar e armazenar informações sobre cervejarias dos Estados Unidos, extraídas da API Open Brewery DB. O fluxo de dados segue uma arquitetura de camadas: Bronze, Silver e Gold, onde os dados são gradualmente limpos, transformados e agregados para facilitar a análise.
 
@@ -119,6 +121,8 @@ Para instalar e executar o projeto:
 ## Demais anotações e referências
 - [Documentação do Airflow](https://airflow.apache.org/docs/)
 - [Documentação do Pandas](https://pandas.pydata.org/docs/)
+- [Documentação da API](https://www.openbrewerydb.org/documentation/)
 
 ## Imagens/screenshots
-![Exemplo de DAG](https://github.com/seuprojeto/imagens/dag_exemplo.png)
+- Simulação de tarefa, forçando um erro para engatilhar a função de tratamento de erros
+![Simulação de Tarefa](https://github.com/MrVtR/openbrewerie-case-data-engineering/blob/main/assets/simulacao.jpg)
