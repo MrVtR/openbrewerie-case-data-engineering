@@ -93,7 +93,7 @@ Abaixo, o passo a passo para a implementação e execução deste projeto:
     - Para a Google Cloud é possível utilizar tanto o **Cloud Storage** com a integração da biblioteca dele em python quanto o **Big Query** com a bibliotecas pandas_gbq.
   - Outros tipos de funções de monitoramento também podem ser criadas com as integrações acima, na parte de Data Quality, destaco problemas com dados nulos e eventuais glitchs de dados, cujo estes estão presentes em algumas linhas da API quando vemos todos os países disponiveis nas requisições. Um Exemplo abaixo de um glitch que se encontra na base de dados da OpenBrewerie:
     ![Detecção de erro](https://github.com/MrVtR/openbrewerie-case-data-engineering/blob/main/assets/error_detection.jpg)
-    - Para corrigir este tipo de erro, podemos partir para uma abordagem matemática utilizando a [**similaridade de cossenos**](https://nishtahir.com/fuzzy-string-matching-using-cosine-similarity/), comparando a string com problemas com uma lista de cidades/estados de um determinado país. Ao encontrar a string com a maior similaridade, ela será substituída pela string correta.
+    - Para corrigir este tipo de erro, podemos partir para uma abordagem matemática utilizando a [**similaridade de cossenos**](https://nishtahir.com/fuzzy-string-matching-using-cosine-similarity/), comparando a string com problemas com uma lista de cidades/estados de um determinado país, que são as colunas mais comuns que observei de ter esse tipo de comportamento, embora possa ser visto em outras colunas também. Ao encontrar a string com a maior similaridade, ela será substituída pela string correta.
 
 ## Instalação
 Para instalar e executar o projeto:
