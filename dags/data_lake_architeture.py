@@ -7,6 +7,8 @@ from airflow.operators.dummy import DummyOperator
 from datetime import timedelta
 import requests
 import pandas as pd
+import time 
+import os
 
 #Função para registrar erros e retentativas de tarefas em um arquivo CSV.
 def task_failure_or_retry_alert(context):
@@ -36,14 +38,15 @@ def task_failure_or_retry_alert(context):
         df_all_logs = pd.DataFrame(log_data)
     finally:
         # Salva o DataFrame no arquivo CSV
+        os.makedirs('custom_logs', exist_ok=True)
         df_all_logs.to_csv('./custom_logs/all_logs.csv',index=False)
 
     print("Log do erro customizado salvo com sucesso na pasta custom_logs")
 
 with DAG(
-    "ab_imbev_breweries",
+    "ab_inbev_breweries",
     default_args={"retries": 2,'retry_delay': timedelta(minutes=3)},
-    description="Processo seletivo da Ab-Imbev 2024",
+    description="Processo seletivo da Ab-Inbev 2024",
     schedule=timedelta(days=1),
     start_date=pendulum.datetime(2024, 10, 6, tz='America/Sao_Paulo'),
     end_date=pendulum.datetime(2024, 10, 30, tz='America/Sao_Paulo'),
@@ -60,26 +63,27 @@ with DAG(
         while True:
             # Faz uma requisição GET para a API
             x = requests.get(f'https://api.openbrewerydb.org/v1/breweries?by_country=united%20states&per_page=250&page={cont_pag}')
-            # Converte a resposta da API de JSON para um dicionário Python
-            response = json.loads(x.text)
-            # Verifica se a solicitação foi bem-sucedid
-            response.raise_for_status() 
-
-            # Incrementa o contador de página
-            cont_pag+=1
-
-            # Primeira iteração: cria um DataFrame com a resposta da API
-            if first_iteraction==False:
-                df = pd.DataFrame.from_dict(response)
-                first_iteraction = True
-            # Iterações subsequentes: concatena os dados ao DataFrame existente
-            else:
-                if(len(response)>0):
-                    df = pd.concat([df, pd.DataFrame.from_dict(response)])
-                # Sai do loop quando não houver mais dados na resposta da API
+            if x.status_code == 200:
+                # Converte a resposta da API de JSON para um dicionário Python
+                response = json.loads(x.text)
+                # Incrementa o contador de página
+                cont_pag+=1
+                # Primeira iteração: cria um DataFrame com a resposta da API
+                if first_iteraction==False:
+                    df = pd.DataFrame.from_dict(response)
+                    first_iteraction = True
+                # Iterações subsequentes: concatena os dados ao DataFrame existente
                 else:
-                    break
+                    if(len(response)>0):
+                        df = pd.concat([df, pd.DataFrame.from_dict(response)])
+                    # Sai do loop quando não houver mais dados na resposta da API
+                    else:
+                        break
+            else:
+                time.sleep(10)
+        
         # Salva os dados brutos em um arquivo CSV na camada Bronze
+        os.makedirs('data/bronze', exist_ok=True)
         df.to_csv("./data/bronze/api_raw_data.csv",index=False)
 
     #Processa os dados da camada Bronze, realiza limpeza e salva em formato Parquet na camada Silver.
@@ -93,7 +97,7 @@ with DAG(
         print(len(df['country'].unique()),df['country'].unique())
         # Remove espaços em branco do início e fim dos valores na coluna 'country'
         df['country'] = df['country'].apply(lambda x: x.strip())
-        # Imprime o número de valores únicos e os valores únicos da coluna 'country' após a limpeza
+        # Imprime o número de valores únicos e os valores únicos da coluna 'country' após a limpeza, haverá uma diferença na quantia de dados únicos
         print(len(df['country'].unique()),df['country'].unique(),end='\n\n')
 
         # Imprime o número de valores únicos e os valores únicos da coluna 'state'
@@ -102,10 +106,11 @@ with DAG(
         df['state'] = df['state'].apply(lambda x: x.strip())
         # Define a primeira letra de cada palavra como maiúscula na coluna 'state'
         df['state'] = df['state'].apply(lambda x: x.title())
-        # Imprime o número de valores únicos e os valores únicos da coluna 'state' após a limpeza
+        # Imprime o número de valores únicos e os valores únicos da coluna 'state' após a limpeza, haverá uma diferença na quantia de dados únicos
         print(len(df['state'].unique()),df['state'].unique())
 
         # Salva os dados processados em formato Parquet na camada Silver, particionando por 'country' e 'state'
+        os.makedirs('data/silver', exist_ok=True)
         df.to_parquet("./data/silver",partition_cols=["country","state"])
         pass
 
@@ -116,6 +121,7 @@ with DAG(
         # Agrupa os dados por 'state' e 'brewery_type' e conta o número de cervejarias por tipo
         df2 = df.groupby(["state","brewery_type"]).brewery_type.agg(brewery_count=("count"))
         # Salva os dados agregados em um arquivo CSV na camada Gold
+        os.makedirs('data/gold', exist_ok=True)
         df2.to_csv("./data/gold/aggregate.csv")
     
     # Cria uma tarefa PythonOperator para a função bronze_dag
