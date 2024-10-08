@@ -75,10 +75,11 @@ x-airflow-common: &airflow-common
     - ${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs
     - ${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config
     - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins
-      - ./data:/opt/airflow/data
+    - ./data:/opt/airflow/data
     - ./data/bronze:/opt/airflow/data/bronze
     - ./data/silver:/opt/airflow/data/silver
     - ./data/gold:/opt/airflow/data/gold
+    - ./custom_logs:/opt/airflow/custom_logs
   user: '${AIRFLOW_UID:-50000}:0'
   depends_on: &airflow-common-depends-on
     redis:
@@ -266,72 +267,5 @@ services:
       - bash
       - -c
       - airflow
-
-  # You can enable flower by adding "--profile flower" option e.g. docker-compose --profile flower up
-  # or by explicitly targeted on the command line e.g. docker-compose up flower.
-  # See: https://docs.docker.com/compose/profiles/
-  flower:
-    <<: *airflow-common
-    command: celery flower
-    profiles:
-      - flower
-    ports:
-      - '5555:5555'
-    healthcheck:
-      test: ['CMD', 'curl', '--fail', 'http://localhost:5555/']
-      interval: 30s
-      timeout: 10s
-      retries: 5
-      start_period: 30s
-    restart: always
-    depends_on:
-      <<: *airflow-common-depends-on
-      airflow-init:
-        condition: service_completed_successfully
-
-  # Spark with N workers
-  spark-master:
-    image: bitnami/spark:3.2.1
-    #user: root # Run container as root container: https://docs.bitnami.com/tutorials/work-with-non-root-containers/
-    hostname: spark
-    environment:
-      - SPARK_MODE=master
-      - SPARK_RPC_AUTHENTICATION_ENABLED=no
-      - SPARK_RPC_ENCRYPTION_ENABLED=no
-      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
-      - SPARK_SSL_ENABLED=no
-    volumes:
-      - ../sandbox/spark/app:/usr/local/spark/app # Scripts (same path in airflow and spark)
-      - ../sandbox/spark/resources:/usr/local/spark/resources # Resources (same path in airflow and spark)
-    ports:
-      - '8081:8080'
-      - '7077:7077'
-
-  spark-worker:
-    image: bitnami/spark:3.2.1
-    #user: root
-    environment:
-      - SPARK_MODE=worker
-      - SPARK_MASTER_URL=spark://spark:7077
-      - SPARK_WORKER_MEMORY=1G
-      - SPARK_WORKER_CORES=1
-      - SPARK_RPC_AUTHENTICATION_ENABLED=no
-      - SPARK_RPC_ENCRYPTION_ENABLED=no
-      - SPARK_LOCAL_STORAGE_ENCRYPTION_ENABLED=no
-      - SPARK_SSL_ENABLED=no
-    volumes:
-      - ../sandbox/spark/app:/usr/local/spark/app # Scripts (same path in airflow and spark)
-      - ../sandbox/spark/resources:/usr/local/spark/resources # Resources (same path in airflow and spark)
-
-  # Jupyter Notebooks
-  jupyter-pyspark:
-    image: jupyter/pyspark-notebook:spark-3.2.1 # pyspark
-    #image: jupyter/all-spark-notebook:spark-3.2.1 # scala
-    #image: jupyter/datascience-notebook:latest # julia
-    ports:
-      - '8888:8888'
-    volumes:
-      - ../sandbox/notebooks:/home/jovyan/work/notebooks/
-
 volumes:
   postgres-db-volume:
