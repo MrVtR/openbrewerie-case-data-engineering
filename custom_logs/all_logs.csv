@@ -1,3 +1,11 @@
 task_id,dag_id,state,try_number,max_tries,execution_date,log_url
-bronze_dag,ab_imbev_breweries,up_for_retry,1,2,2024-10-08 03:44:11.914156+00:00,http://localhost:8080/dags/ab_imbev_breweries/grid?dag_run_id=manual__2024-10-08T03%3A44%3A11.914156%2B00%3A00&task_id=bronze_dag&base_date=2024-10-08T03%3A44%3A11%2B0000&tab=logs
-end_task,ab_imbev_breweries,upstream_failed,0,2,2024-10-08 03:44:11.914156+00:00,http://localhost:8080/dags/ab_imbev_breweries/grid?dag_run_id=manual__2024-10-08T03%3A44%3A11.914156%2B00%3A00&task_id=end_task&base_date=2024-10-08T03%3A44%3A11%2B0000&tab=logs
+bronze_dag,ab_inbev_breweries,up_for_retry,1,2,2024-10-08 14:12:46.081186+00:00,http://localhost:8080/dags/ab_inbev_breweries/grid?dag_run_id=manual__2024-10-08T14%3A12%3A46.081186%2B00%3A00&task_id=bronze_dag&base_date=2024-10-08T14%3A12%3A46%2B0000&tab=logs
+bronze_dag,ab_inbev_breweries,up_for_retry,1,2,2024-10-08 14:12:52.934178+00:00,http://localhost:8080/dags/ab_inbev_breweries/grid?dag_run_id=manual__2024-10-08T14%3A12%3A52.934178%2B00%3A00&task_id=bronze_dag&base_date=2024-10-08T14%3A12%3A52%2B0000&tab=logs
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,
+,,,,,,

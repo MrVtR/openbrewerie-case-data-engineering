@@ -43,6 +43,8 @@ def task_failure_or_retry_alert(context):
 
     print("Log do erro customizado salvo com sucesso na pasta custom_logs")
 
+def function_tt():
+    raise ValueError("Erro personalizado")
 with DAG(
     "ab_inbev_breweries",
     default_args={"retries": 2,'retry_delay': timedelta(minutes=3)},
@@ -127,7 +129,7 @@ with DAG(
     # Cria uma tarefa PythonOperator para a função bronze_dag
     bronze_dag_task = PythonOperator(
         task_id="bronze_dag",
-        python_callable=bronze_dag,
+        python_callable=function_tt,
         on_retry_callback=task_failure_or_retry_alert,
     )
     # Cria uma tarefa PythonOperator para a função silver_dag

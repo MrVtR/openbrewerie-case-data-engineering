@@ -1,613 +1,613 @@
 state,brewery_type,brewery_count
 Alabama,bar,0
-Alabama,brewpub,4
+Alabama,brewpub,16
 Alabama,closed,0
-Alabama,contract,1
+Alabama,contract,4
 Alabama,large,0
 Alabama,location,0
-Alabama,micro,32
+Alabama,micro,128
 Alabama,nano,0
-Alabama,planning,9
+Alabama,planning,36
 Alabama,proprietor,0
 Alabama,regional,0
 Alabama,taproom,0
 Alaska,bar,0
-Alaska,brewpub,15
-Alaska,closed,4
-Alaska,contract,1
+Alaska,brewpub,60
+Alaska,closed,16
+Alaska,contract,4
 Alaska,large,0
 Alaska,location,0
-Alaska,micro,30
+Alaska,micro,120
 Alaska,nano,0
-Alaska,planning,2
+Alaska,planning,8
 Alaska,proprietor,0
-Alaska,regional,1
+Alaska,regional,4
 Alaska,taproom,0
 Arizona,bar,0
-Arizona,brewpub,46
+Arizona,brewpub,184
 Arizona,closed,0
-Arizona,contract,4
-Arizona,large,2
+Arizona,contract,16
+Arizona,large,8
 Arizona,location,0
-Arizona,micro,62
+Arizona,micro,248
 Arizona,nano,0
-Arizona,planning,13
+Arizona,planning,52
 Arizona,proprietor,0
-Arizona,regional,1
+Arizona,regional,4
 Arizona,taproom,0
 Arkansas,bar,0
-Arkansas,brewpub,18
+Arkansas,brewpub,72
 Arkansas,closed,0
-Arkansas,contract,1
+Arkansas,contract,4
 Arkansas,large,0
 Arkansas,location,0
-Arkansas,micro,22
+Arkansas,micro,88
 Arkansas,nano,0
-Arkansas,planning,4
+Arkansas,planning,16
 Arkansas,proprietor,0
 Arkansas,regional,0
 Arkansas,taproom,0
 California,bar,0
-California,brewpub,260
-California,closed,54
-California,contract,27
-California,large,16
+California,brewpub,1040
+California,closed,216
+California,contract,108
+California,large,64
 California,location,0
-California,micro,474
+California,micro,1896
 California,nano,0
-California,planning,67
-California,proprietor,13
-California,regional,30
+California,planning,268
+California,proprietor,52
+California,regional,120
 California,taproom,0
 Colorado,bar,0
-Colorado,brewpub,145
-Colorado,closed,9
-Colorado,contract,9
-Colorado,large,8
+Colorado,brewpub,580
+Colorado,closed,36
+Colorado,contract,36
+Colorado,large,32
 Colorado,location,0
-Colorado,micro,232
+Colorado,micro,928
 Colorado,nano,0
-Colorado,planning,40
-Colorado,proprietor,5
-Colorado,regional,11
+Colorado,planning,160
+Colorado,proprietor,20
+Colorado,regional,44
 Colorado,taproom,0
 Connecticut,bar,0
-Connecticut,brewpub,11
-Connecticut,closed,7
-Connecticut,contract,5
+Connecticut,brewpub,44
+Connecticut,closed,28
+Connecticut,contract,20
 Connecticut,large,0
 Connecticut,location,0
-Connecticut,micro,49
+Connecticut,micro,196
 Connecticut,nano,0
-Connecticut,planning,21
+Connecticut,planning,84
 Connecticut,proprietor,0
-Connecticut,regional,2
+Connecticut,regional,8
 Connecticut,taproom,0
 Delaware,bar,0
-Delaware,brewpub,15
+Delaware,brewpub,60
 Delaware,closed,0
 Delaware,contract,0
-Delaware,large,1
+Delaware,large,4
 Delaware,location,0
-Delaware,micro,12
+Delaware,micro,48
 Delaware,nano,0
-Delaware,planning,2
+Delaware,planning,8
 Delaware,proprietor,0
-Delaware,regional,1
+Delaware,regional,4
 Delaware,taproom,0
 District Of Columbia,bar,0
-District Of Columbia,brewpub,6
+District Of Columbia,brewpub,24
 District Of Columbia,closed,0
-District Of Columbia,contract,2
+District Of Columbia,contract,8
 District Of Columbia,large,0
 District Of Columbia,location,0
-District Of Columbia,micro,6
+District Of Columbia,micro,24
 District Of Columbia,nano,0
-District Of Columbia,planning,2
+District Of Columbia,planning,8
 District Of Columbia,proprietor,0
-District Of Columbia,regional,1
+District Of Columbia,regional,4
 District Of Columbia,taproom,0
 Florida,bar,0
-Florida,brewpub,66
+Florida,brewpub,264
 Florida,closed,0
-Florida,contract,7
-Florida,large,4
+Florida,contract,28
+Florida,large,16
 Florida,location,0
-Florida,micro,197
+Florida,micro,788
 Florida,nano,0
-Florida,planning,39
-Florida,proprietor,5
-Florida,regional,5
+Florida,planning,156
+Florida,proprietor,20
+Florida,regional,20
 Florida,taproom,0
 Georgia,bar,0
-Georgia,brewpub,27
+Georgia,brewpub,108
 Georgia,closed,0
-Georgia,contract,2
-Georgia,large,3
+Georgia,contract,8
+Georgia,large,12
 Georgia,location,0
-Georgia,micro,48
+Georgia,micro,192
 Georgia,nano,0
-Georgia,planning,21
-Georgia,proprietor,1
-Georgia,regional,3
+Georgia,planning,84
+Georgia,proprietor,4
+Georgia,regional,12
 Georgia,taproom,0
 Hawaii,bar,0
-Hawaii,brewpub,12
-Hawaii,closed,3
+Hawaii,brewpub,48
+Hawaii,closed,12
 Hawaii,contract,0
 Hawaii,large,0
 Hawaii,location,0
-Hawaii,micro,7
+Hawaii,micro,28
 Hawaii,nano,0
 Hawaii,planning,0
 Hawaii,proprietor,0
-Hawaii,regional,1
+Hawaii,regional,4
 Hawaii,taproom,0
 Idaho,bar,0
-Idaho,brewpub,23
-Idaho,closed,5
-Idaho,contract,1
-Idaho,large,2
+Idaho,brewpub,92
+Idaho,closed,20
+Idaho,contract,4
+Idaho,large,8
 Idaho,location,0
-Idaho,micro,37
+Idaho,micro,148
 Idaho,nano,0
 Idaho,planning,0
-Idaho,proprietor,1
+Idaho,proprietor,4
 Idaho,regional,0
 Idaho,taproom,0
 Illinois,bar,0
-Illinois,brewpub,91
+Illinois,brewpub,364
 Illinois,closed,0
-Illinois,contract,12
-Illinois,large,4
+Illinois,contract,48
+Illinois,large,16
 Illinois,location,0
-Illinois,micro,127
+Illinois,micro,508
 Illinois,nano,0
-Illinois,planning,24
-Illinois,proprietor,5
-Illinois,regional,3
+Illinois,planning,96
+Illinois,proprietor,20
+Illinois,regional,12
 Illinois,taproom,0
 Indiana,bar,0
-Indiana,brewpub,78
+Indiana,brewpub,312
 Indiana,closed,0
-Indiana,contract,2
+Indiana,contract,8
 Indiana,large,0
 Indiana,location,0
-Indiana,micro,63
+Indiana,micro,252
 Indiana,nano,0
-Indiana,planning,20
-Indiana,proprietor,1
-Indiana,regional,3
+Indiana,planning,80
+Indiana,proprietor,4
+Indiana,regional,12
 Indiana,taproom,0
 Iowa,bar,0
-Iowa,brewpub,33
-Iowa,closed,2
-Iowa,contract,1
+Iowa,brewpub,132
+Iowa,closed,8
+Iowa,contract,4
 Iowa,large,0
 Iowa,location,0
-Iowa,micro,59
+Iowa,micro,236
 Iowa,nano,0
 Iowa,planning,0
 Iowa,proprietor,0
 Iowa,regional,0
 Iowa,taproom,0
 Kansas,bar,0
-Kansas,brewpub,21
+Kansas,brewpub,84
 Kansas,closed,0
 Kansas,contract,0
 Kansas,large,0
 Kansas,location,0
-Kansas,micro,18
+Kansas,micro,72
 Kansas,nano,0
-Kansas,planning,7
-Kansas,proprietor,1
-Kansas,regional,1
+Kansas,planning,28
+Kansas,proprietor,4
+Kansas,regional,4
 Kansas,taproom,0
 Kentucky,bar,0
-Kentucky,brewpub,13
+Kentucky,brewpub,52
 Kentucky,closed,0
-Kentucky,contract,1
+Kentucky,contract,4
 Kentucky,large,0
 Kentucky,location,0
-Kentucky,micro,42
+Kentucky,micro,168
 Kentucky,nano,0
-Kentucky,planning,3
+Kentucky,planning,12
 Kentucky,proprietor,0
-Kentucky,regional,1
+Kentucky,regional,4
 Kentucky,taproom,0
 Louisiana,bar,0
-Louisiana,brewpub,6
+Louisiana,brewpub,24
 Louisiana,closed,0
-Louisiana,contract,2
+Louisiana,contract,8
 Louisiana,large,0
 Louisiana,location,0
-Louisiana,micro,26
+Louisiana,micro,104
 Louisiana,nano,0
-Louisiana,planning,8
+Louisiana,planning,32
 Louisiana,proprietor,0
-Louisiana,regional,2
+Louisiana,regional,8
 Louisiana,taproom,0
 Maine,bar,0
-Maine,brewpub,32
+Maine,brewpub,128
 Maine,closed,0
-Maine,contract,2
+Maine,contract,8
 Maine,large,0
 Maine,location,0
-Maine,micro,70
+Maine,micro,280
 Maine,nano,0
-Maine,planning,7
-Maine,proprietor,1
-Maine,regional,3
+Maine,planning,28
+Maine,proprietor,4
+Maine,regional,12
 Maine,taproom,0
 Maryland,bar,0
-Maryland,brewpub,26
+Maryland,brewpub,104
 Maryland,closed,0
-Maryland,contract,7
-Maryland,large,1
+Maryland,contract,28
+Maryland,large,4
 Maryland,location,0
-Maryland,micro,53
+Maryland,micro,212
 Maryland,nano,0
-Maryland,planning,18
-Maryland,proprietor,2
-Maryland,regional,4
+Maryland,planning,72
+Maryland,proprietor,8
+Maryland,regional,16
 Maryland,taproom,0
 Massachusetts,bar,0
-Massachusetts,brewpub,34
+Massachusetts,brewpub,136
 Massachusetts,closed,0
-Massachusetts,contract,9
+Massachusetts,contract,36
 Massachusetts,large,0
 Massachusetts,location,0
-Massachusetts,micro,97
+Massachusetts,micro,388
 Massachusetts,nano,0
-Massachusetts,planning,17
-Massachusetts,proprietor,2
-Massachusetts,regional,9
+Massachusetts,planning,68
+Massachusetts,proprietor,8
+Massachusetts,regional,36
 Massachusetts,taproom,0
 Michigan,bar,0
-Michigan,brewpub,203
+Michigan,brewpub,812
 Michigan,closed,0
-Michigan,contract,3
+Michigan,contract,12
 Michigan,large,0
 Michigan,location,0
-Michigan,micro,145
+Michigan,micro,580
 Michigan,nano,0
-Michigan,planning,21
+Michigan,planning,84
 Michigan,proprietor,0
-Michigan,regional,9
+Michigan,regional,36
 Michigan,taproom,0
 Minnesota,bar,0
-Minnesota,brewpub,44
+Minnesota,brewpub,176
 Minnesota,closed,0
-Minnesota,contract,5
+Minnesota,contract,20
 Minnesota,large,0
 Minnesota,location,0
-Minnesota,micro,116
+Minnesota,micro,464
 Minnesota,nano,0
-Minnesota,planning,13
-Minnesota,proprietor,2
-Minnesota,regional,8
+Minnesota,planning,52
+Minnesota,proprietor,8
+Minnesota,regional,32
 Minnesota,taproom,0
 Mississippi,bar,0
-Mississippi,brewpub,2
+Mississippi,brewpub,8
 Mississippi,closed,0
-Mississippi,contract,1
+Mississippi,contract,4
 Mississippi,large,0
 Mississippi,location,0
-Mississippi,micro,14
+Mississippi,micro,56
 Mississippi,nano,0
-Mississippi,planning,1
+Mississippi,planning,4
 Mississippi,proprietor,0
 Mississippi,regional,0
 Mississippi,taproom,0
 Missouri,bar,0
-Missouri,brewpub,49
-Missouri,closed,13
-Missouri,contract,1
-Missouri,large,1
+Missouri,brewpub,196
+Missouri,closed,52
+Missouri,contract,4
+Missouri,large,4
 Missouri,location,0
-Missouri,micro,69
+Missouri,micro,276
 Missouri,nano,0
-Missouri,planning,3
-Missouri,proprietor,3
-Missouri,regional,9
+Missouri,planning,12
+Missouri,proprietor,12
+Missouri,regional,36
 Missouri,taproom,0
 Montana,bar,0
-Montana,brewpub,17
+Montana,brewpub,68
 Montana,closed,0
-Montana,contract,2
+Montana,contract,8
 Montana,large,0
 Montana,location,0
-Montana,micro,63
+Montana,micro,252
 Montana,nano,0
-Montana,planning,11
+Montana,planning,44
 Montana,proprietor,0
-Montana,regional,2
+Montana,regional,8
 Montana,taproom,0
 Nebraska,bar,0
-Nebraska,brewpub,21
-Nebraska,closed,2
+Nebraska,brewpub,84
+Nebraska,closed,8
 Nebraska,contract,0
 Nebraska,large,0
 Nebraska,location,0
-Nebraska,micro,30
+Nebraska,micro,120
 Nebraska,nano,0
-Nebraska,planning,4
+Nebraska,planning,16
 Nebraska,proprietor,0
 Nebraska,regional,0
 Nebraska,taproom,0
-Nevada,bar,1
-Nevada,brewpub,20
+Nevada,bar,4
+Nevada,brewpub,80
 Nevada,closed,0
-Nevada,contract,3
+Nevada,contract,12
 Nevada,large,0
 Nevada,location,0
-Nevada,micro,24
+Nevada,micro,96
 Nevada,nano,0
-Nevada,planning,5
+Nevada,planning,20
 Nevada,proprietor,0
 Nevada,regional,0
 Nevada,taproom,0
 New Hampshire,bar,0
-New Hampshire,brewpub,23
-New Hampshire,closed,1
-New Hampshire,contract,1
-New Hampshire,large,1
+New Hampshire,brewpub,92
+New Hampshire,closed,4
+New Hampshire,contract,4
+New Hampshire,large,4
 New Hampshire,location,0
-New Hampshire,micro,48
+New Hampshire,micro,192
 New Hampshire,nano,0
-New Hampshire,planning,7
+New Hampshire,planning,28
 New Hampshire,proprietor,0
-New Hampshire,regional,2
+New Hampshire,regional,8
 New Hampshire,taproom,0
 New Jersey,bar,0
-New Jersey,brewpub,16
+New Jersey,brewpub,64
 New Jersey,closed,0
-New Jersey,contract,4
-New Jersey,large,1
+New Jersey,contract,16
+New Jersey,large,4
 New Jersey,location,0
-New Jersey,micro,80
+New Jersey,micro,320
 New Jersey,nano,0
-New Jersey,planning,14
+New Jersey,planning,56
 New Jersey,proprietor,0
-New Jersey,regional,1
+New Jersey,regional,4
 New Jersey,taproom,0
 New Mexico,bar,0
-New Mexico,brewpub,44
+New Mexico,brewpub,176
 New Mexico,closed,0
-New Mexico,contract,1
+New Mexico,contract,4
 New Mexico,large,0
 New Mexico,location,0
-New Mexico,micro,31
+New Mexico,micro,124
 New Mexico,nano,0
-New Mexico,planning,5
-New Mexico,proprietor,2
-New Mexico,regional,2
+New Mexico,planning,20
+New Mexico,proprietor,8
+New Mexico,regional,8
 New Mexico,taproom,0
 New York,bar,0
-New York,brewpub,116
+New York,brewpub,464
 New York,closed,0
-New York,contract,23
-New York,large,4
+New York,contract,92
+New York,large,16
 New York,location,0
-New York,micro,227
+New York,micro,908
 New York,nano,0
-New York,planning,39
-New York,proprietor,10
-New York,regional,9
+New York,planning,156
+New York,proprietor,40
+New York,regional,36
 New York,taproom,0
 North Carolina,bar,0
-North Carolina,brewpub,74
+North Carolina,brewpub,296
 North Carolina,closed,0
-North Carolina,contract,5
-North Carolina,large,4
+North Carolina,contract,20
+North Carolina,large,16
 North Carolina,location,0
-North Carolina,micro,185
+North Carolina,micro,740
 North Carolina,nano,0
-North Carolina,planning,29
-North Carolina,proprietor,3
-North Carolina,regional,13
+North Carolina,planning,116
+North Carolina,proprietor,12
+North Carolina,regional,52
 North Carolina,taproom,0
-North Dakota,bar,1
-North Dakota,brewpub,8
-North Dakota,closed,3
+North Dakota,bar,4
+North Dakota,brewpub,32
+North Dakota,closed,12
 North Dakota,contract,0
 North Dakota,large,0
 North Dakota,location,0
-North Dakota,micro,12
-North Dakota,nano,2
+North Dakota,micro,48
+North Dakota,nano,8
 North Dakota,planning,0
 North Dakota,proprietor,0
 North Dakota,regional,0
 North Dakota,taproom,0
 Ohio,bar,0
-Ohio,brewpub,96
-Ohio,closed,1
-Ohio,contract,7
-Ohio,large,2
+Ohio,brewpub,384
+Ohio,closed,4
+Ohio,contract,28
+Ohio,large,8
 Ohio,location,0
-Ohio,micro,165
+Ohio,micro,660
 Ohio,nano,0
-Ohio,planning,26
-Ohio,proprietor,1
-Ohio,regional,9
+Ohio,planning,104
+Ohio,proprietor,4
+Ohio,regional,36
 Ohio,taproom,0
 Oklahoma,bar,0
-Oklahoma,brewpub,5
-Oklahoma,closed,1
-Oklahoma,contract,4
+Oklahoma,brewpub,20
+Oklahoma,closed,4
+Oklahoma,contract,16
 Oklahoma,large,0
 Oklahoma,location,0
-Oklahoma,micro,31
+Oklahoma,micro,124
 Oklahoma,nano,0
-Oklahoma,planning,4
+Oklahoma,planning,16
 Oklahoma,proprietor,0
 Oklahoma,regional,0
 Oklahoma,taproom,0
 Oregon,bar,0
-Oregon,brewpub,109
-Oregon,closed,11
-Oregon,contract,3
-Oregon,large,10
+Oregon,brewpub,436
+Oregon,closed,44
+Oregon,contract,12
+Oregon,large,40
 Oregon,location,0
-Oregon,micro,143
+Oregon,micro,572
 Oregon,nano,0
-Oregon,planning,12
-Oregon,proprietor,2
-Oregon,regional,13
+Oregon,planning,48
+Oregon,proprietor,8
+Oregon,regional,52
 Oregon,taproom,0
 Pennsylvania,bar,0
-Pennsylvania,brewpub,160
+Pennsylvania,brewpub,640
 Pennsylvania,closed,0
-Pennsylvania,contract,6
+Pennsylvania,contract,24
 Pennsylvania,large,0
 Pennsylvania,location,0
-Pennsylvania,micro,133
+Pennsylvania,micro,532
 Pennsylvania,nano,0
-Pennsylvania,planning,36
-Pennsylvania,proprietor,2
-Pennsylvania,regional,13
-Pennsylvania,taproom,1
+Pennsylvania,planning,144
+Pennsylvania,proprietor,8
+Pennsylvania,regional,52
+Pennsylvania,taproom,4
 Rhode Island,bar,0
-Rhode Island,brewpub,9
+Rhode Island,brewpub,36
 Rhode Island,closed,0
 Rhode Island,contract,0
 Rhode Island,large,0
 Rhode Island,location,0
-Rhode Island,micro,20
+Rhode Island,micro,80
 Rhode Island,nano,0
 Rhode Island,planning,0
-Rhode Island,proprietor,1
-Rhode Island,regional,1
+Rhode Island,proprietor,4
+Rhode Island,regional,4
 Rhode Island,taproom,0
 South Carolina,bar,0
-South Carolina,brewpub,30
-South Carolina,closed,1
-South Carolina,contract,1
+South Carolina,brewpub,120
+South Carolina,closed,4
+South Carolina,contract,4
 South Carolina,large,0
 South Carolina,location,0
-South Carolina,micro,38
+South Carolina,micro,152
 South Carolina,nano,0
-South Carolina,planning,8
+South Carolina,planning,32
 South Carolina,proprietor,0
-South Carolina,regional,2
+South Carolina,regional,8
 South Carolina,taproom,0
 South Dakota,bar,0
-South Dakota,brewpub,15
-South Dakota,closed,2
-South Dakota,contract,1
+South Dakota,brewpub,60
+South Dakota,closed,8
+South Dakota,contract,4
 South Dakota,large,0
 South Dakota,location,0
-South Dakota,micro,25
+South Dakota,micro,100
 South Dakota,nano,0
-South Dakota,planning,2
-South Dakota,proprietor,1
+South Dakota,planning,8
+South Dakota,proprietor,4
 South Dakota,regional,0
 South Dakota,taproom,0
 Tennessee,bar,0
-Tennessee,brewpub,27
+Tennessee,brewpub,108
 Tennessee,closed,0
-Tennessee,contract,1
+Tennessee,contract,4
 Tennessee,large,0
 Tennessee,location,0
-Tennessee,micro,59
-Tennessee,nano,1
-Tennessee,planning,20
-Tennessee,proprietor,2
-Tennessee,regional,2
+Tennessee,micro,236
+Tennessee,nano,4
+Tennessee,planning,80
+Tennessee,proprietor,8
+Tennessee,regional,8
 Tennessee,taproom,0
 Texas,bar,0
-Texas,brewpub,77
-Texas,closed,2
-Texas,contract,6
-Texas,large,4
+Texas,brewpub,308
+Texas,closed,8
+Texas,contract,24
+Texas,large,16
 Texas,location,0
-Texas,micro,204
+Texas,micro,816
 Texas,nano,0
-Texas,planning,59
-Texas,proprietor,1
-Texas,regional,10
+Texas,planning,236
+Texas,proprietor,4
+Texas,regional,40
 Texas,taproom,0
 Utah,bar,0
-Utah,brewpub,15
-Utah,closed,4
+Utah,brewpub,60
+Utah,closed,16
 Utah,contract,0
 Utah,large,0
 Utah,location,0
-Utah,micro,22
+Utah,micro,88
 Utah,nano,0
-Utah,planning,3
+Utah,planning,12
 Utah,proprietor,0
-Utah,regional,2
+Utah,regional,8
 Utah,taproom,0
 Vermont,bar,0
-Vermont,brewpub,16
+Vermont,brewpub,64
 Vermont,closed,0
 Vermont,contract,0
 Vermont,large,0
 Vermont,location,0
-Vermont,micro,36
+Vermont,micro,144
 Vermont,nano,0
-Vermont,planning,2
+Vermont,planning,8
 Vermont,proprietor,0
-Vermont,regional,7
+Vermont,regional,28
 Vermont,taproom,0
 Virginia,bar,0
-Virginia,brewpub,56
+Virginia,brewpub,224
 Virginia,closed,0
-Virginia,contract,5
-Virginia,large,5
+Virginia,contract,20
+Virginia,large,20
 Virginia,location,0
-Virginia,micro,155
+Virginia,micro,620
 Virginia,nano,0
-Virginia,planning,34
+Virginia,planning,136
 Virginia,proprietor,0
-Virginia,regional,3
+Virginia,regional,12
 Virginia,taproom,0
 Washington,bar,0
-Washington,brewpub,119
-Washington,closed,65
-Washington,contract,4
-Washington,large,3
-Washington,location,1
-Washington,micro,273
-Washington,nano,6
-Washington,planning,6
-Washington,proprietor,2
-Washington,regional,7
+Washington,brewpub,476
+Washington,closed,260
+Washington,contract,16
+Washington,large,12
+Washington,location,4
+Washington,micro,1092
+Washington,nano,24
+Washington,planning,24
+Washington,proprietor,8
+Washington,regional,28
 Washington,taproom,0
 West Virginia,bar,0
-West Virginia,brewpub,14
-West Virginia,closed,3
+West Virginia,brewpub,56
+West Virginia,closed,12
 West Virginia,contract,0
 West Virginia,large,0
 West Virginia,location,0
-West Virginia,micro,21
-West Virginia,nano,1
-West Virginia,planning,1
-West Virginia,proprietor,1
+West Virginia,micro,84
+West Virginia,nano,4
+West Virginia,planning,4
+West Virginia,proprietor,4
 West Virginia,regional,0
 West Virginia,taproom,0
 Wisconsin,bar,0
-Wisconsin,brewpub,78
-Wisconsin,closed,10
-Wisconsin,contract,14
-Wisconsin,large,5
+Wisconsin,brewpub,312
+Wisconsin,closed,40
+Wisconsin,contract,56
+Wisconsin,large,20
 Wisconsin,location,0
-Wisconsin,micro,103
-Wisconsin,nano,1
-Wisconsin,planning,9
-Wisconsin,proprietor,2
-Wisconsin,regional,9
+Wisconsin,micro,412
+Wisconsin,nano,4
+Wisconsin,planning,36
+Wisconsin,proprietor,8
+Wisconsin,regional,36
 Wisconsin,taproom,0
 Wyoming,bar,0
-Wyoming,brewpub,15
-Wyoming,closed,3
-Wyoming,contract,1
+Wyoming,brewpub,60
+Wyoming,closed,12
+Wyoming,contract,4
 Wyoming,large,0
 Wyoming,location,0
-Wyoming,micro,23
+Wyoming,micro,92
 Wyoming,nano,0
 Wyoming,planning,0
 Wyoming,proprietor,0
-Wyoming,regional,1
+Wyoming,regional,4
 Wyoming,taproom,0

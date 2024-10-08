@@ -267,5 +267,14 @@ services:
       - bash
       - -c
       - airflow
+  # Jupyter Notebooks
+  jupyter-pyspark:
+    image: jupyter/pyspark-notebook:spark-3.2.1 # pyspark
+    #image: jupyter/all-spark-notebook:spark-3.2.1 # scala
+    #image: jupyter/datascience-notebook:latest # julia
+    ports:
+      - '8888:8888'
+    volumes:
+      - ../sandbox/notebooks:/home/jovyan/work/notebooks/
 volumes:
   postgres-db-volume:
